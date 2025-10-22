@@ -2,7 +2,7 @@
 
 FILE="/home/ubuntu/Downloads/update_org.txt"
 
-while IFS= read -r line
+for line in $(cat "$FILE")
 do
     echo "Line: $line"
-done < "$FILE"
+done
